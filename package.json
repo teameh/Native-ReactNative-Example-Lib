@@ -1,0 +1,56 @@
+{
+  "name": "PersgroepMobileAppSDK",
+  "version": "0.0.1",
+  "description": "SDK for building mobile apps for De Persgroep",
+  "author": "Team B.A.R.T",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "flow": "flow check",
+    "lint": "eslint ./js --max-warnings 0",
+    "check": "yarn run lint && yarn run flow && yarn test",
+    "ios-install": "yarn && pod repo update && pod install"
+  },
+  "dependencies": {
+    "articledetail-models": "git+ssh://git@bitbucket.org:persgroep/articledetail.models.git#v1.0.0",
+    "html-entities": "^1.2.1",
+    "idx": "^2.3.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.17",
+    "persgroep-edition-sharedjs": "git+ssh://git@bitbucket.org:persgroep/edition.sharedjs.git#v58",
+    "prop-types": "^15.6.1",
+    "ramda": "^0.25.0",
+    "react": "^16.4.0",
+    "react-native": "^0.55.4",
+    "react-native-htmlview": "^0.12.1",
+    "react-native-hyperlink": "^0.0.14",
+    "urijs": "^1.19.1",
+    "url-parse": "^1.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-idx": "2.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow-bin": "^0.74.0",
+    "flow-typed": "^2.4.0",
+    "jest": "^23.1.0",
+    "react-test-renderer": "^16.4.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": []
+  }
+}

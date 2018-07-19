@@ -2,7 +2,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'MyReactNativeLib_Example' do
-  pod 'MyReactNativeLib', :path => '../'
+  pod 'MyReactNativeLib', :path => '../..'
 
   target 'MyReactNativeLib_Tests' do
     inherit! :search_paths

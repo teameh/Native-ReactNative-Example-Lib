@@ -20,6 +20,9 @@ DerivedData
 *.hmap
 *.ipa
 
+# javascript stuff
+node_modules
+
 # Bundler
 .bundle
 
