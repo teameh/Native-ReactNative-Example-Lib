@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MyReactNativeLib_Example' do
+  pod 'MyReactNativeLib', :path => '../'
+
+  target 'MyReactNativeLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
