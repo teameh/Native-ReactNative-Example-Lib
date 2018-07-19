@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import MyReactNativeLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        TweetManager.shared.loadSomeTweet()
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
